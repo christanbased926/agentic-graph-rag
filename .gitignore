@@ -1,0 +1,5 @@
+.env
+**/__pycache__/
+**/.adk/
+app/neo4j/*
+!app/neo4j/.gitkeep
