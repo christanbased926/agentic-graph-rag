@@ -1,0 +1,1 @@
+Prototype for ADK-MCP-GraphRAG-Setup of IN.IDEA
