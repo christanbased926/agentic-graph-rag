@@ -1,0 +1,32 @@
+# FMA (Fast-Model-Adapter | Fast-MCP-Architecture)
+
+FROM python:3.11-slim
+
+# Verhindert, dass Python .pyc Files schreibt und Puffern aktiviert
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+WORKDIR /app
+
+# System-Abhängigkeiten (falls für neo4j oder andere libs nötig)
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Explizite Installation der Haupt-Packages
+RUN pip install --no-cache-dir \
+    fastapi \
+    uvicorn \
+    "mcp[sse]" \
+    neo4j \
+    python-dotenv
+
+# Im Dev-Modus lassen wir COPY weg oder nutzen es nur als Fallback, 
+# da wir das Volume über Docker Compose mounten.
+# COPY ./app /app/app 
+
+# Port für FastAPI
+EXPOSE 8002
+
+# Standard-Befehl (wird im Compose für Dev überschrieben)
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8002"]

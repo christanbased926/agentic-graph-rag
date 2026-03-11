@@ -3,3 +3,5 @@
 **/.adk/
 app/neo4j/*
 !app/neo4j/.gitkeep
+logs/*
+!logs/.gitkeep
