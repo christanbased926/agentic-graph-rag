@@ -65,7 +65,9 @@ class GraphDatabase:
     async def get_unit_by_id(self, unit_id):
         """Sucht Unit basierend auf ID."""
 
-        int(unit_id) if unit_id.isdigit() else unit_id
+        # ensure INTs are handled as such
+        if isinstance(unit_id, str) and unit_id.isdigit():
+            unit_id = int(unit_id)
         
         query = load_cypher_file("get_unit_by_id")
         result = await self.run_statement(query, {"id": unit_id})

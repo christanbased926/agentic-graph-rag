@@ -10,6 +10,8 @@ WHERE
   )
   AND
   NONE(node IN nodes(path)[1..-1] WHERE node:Concept)
+  AND
+  NONE(node IN nodes(path)[1..-1] WHERE node:Architectonic)
 
 UNWIND relationships(path) AS r
 WITH DISTINCT r

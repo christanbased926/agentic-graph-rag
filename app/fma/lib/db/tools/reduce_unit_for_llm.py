@@ -95,6 +95,13 @@ def reduce_unit_for_llm(input_text):
     # Finaler Sweep: Alle {} entfernen
 
     output = "\n".join(output).replace(' ]', ']')
+
+    # Remove Fixtures
     output = re.sub(r'(^|:?)Fixture', '', output)
+    # Remove _ids
+    output = re.sub(r'[a-zA-Z_]+_id:[0-9,]+', '', output)
+    # Remove path_ids
+    output = re.sub(r'[a-zA-Z_]+path_ids:[0-9,\[\]]+', '', output)
+    output = output.replace(',}', '}').replace('{,', '{')
 
     return output

@@ -1,7 +1,6 @@
 // ---------------------------------------------------------------------------
 // PERFORMANCE OPTIMIZATION: Hierarchical Flattening (Materialized Paths)
 // This script implements the conceptual design for O(1) hierarchy lookups
-// as defined in docs/02_performance-and-scaling.md
 // ---------------------------------------------------------------------------
 
 // 1. Identify all Concept nodes loaded from fixtures
@@ -18,7 +17,22 @@ WITH c, collect(DISTINCT ancestor.concept_id) AS all_ancestor_ids
 
 // 4. Materialize the path property onto the node
 // This allows bypassing recursive JOINs/Traversals during query time.
-SET c.concept_path_ids = all_ancestor_ids
+SET c.concept_path_ids = all_ancestor_ids;
 
-// 5. Provide feedback for the Seeder log
-// RETURN count(c) AS MaterializedConcepts;
+// Do the same again for Architectonics
+MATCH (a:Architectonic)
+MATCH (a)-[:IS_A*0..]->(ancestor:Architectonic)
+WITH a, collect(DISTINCT ancestor.architectonic_id) AS all_ancestor_ids
+SET a.architectonic_path_ids = all_ancestor_ids;
+
+//----------------------------------------------------------------------
+
+MATCH (c:Concept)
+MATCH (c)-[:IS_A*1..]->(ancestor:Concept)
+WITH c, collect(DISTINCT ancestor.slug) AS all_ancestor_slugs
+SET c.ancestor_slugs = all_ancestor_slugs;
+
+MATCH (a:Architectonic)
+MATCH (a)-[:IS_A*1..]->(ancestor:Architectonic)
+WITH a, collect(DISTINCT ancestor.slug) AS all_ancestor_slugs
+SET a.ancestor_slugs = all_ancestor_slugs;
