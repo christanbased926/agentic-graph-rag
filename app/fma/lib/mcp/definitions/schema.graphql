@@ -1,0 +1,270 @@
+"""
+Physical or virtual Carrier of one or more Compositions
+"""
+type Unit { # Sublabels: :Coin
+  unit_id: Int!
+  slug: String!
+  
+  compositions: [Composition!]! @relationship(type: "HAS_COMPOSITION", direction: OUT)
+}
+
+"""
+Represents a specific visual or structural arrangement on/in the Unit
+"""
+type Composition { # Sublabels: :CoinObverse, :CoinReverse
+  composition_id: Int!
+  slug: String!
+  chromaticity: String! # Does not mean related images, but the color information of the composition
+  
+  entities: [CompositionEntity!]! @relationship(type: "HAS_COMPOSITION_ENTITY", direction: OUT)
+  patterns: [CompositionPattern!]! @relationship(type: "HAS_PATTERN", direction: OUT)
+  groups: [CompositionGroup!]! @relationship(type: "HAS_COMPOSITION_GROUP", direction: OUT)
+  comparisons: [CompositionComparison!]! @relationship(type: "HAS_COMPOSITION_COMPARISON", direction: OUT)
+  contexts: [CompositionContext!]! @relationship(type: "HAS_COMPOSITION_CONTEXT", direction: OUT)
+  images: [Image!]! @relationship(type: "HAS_IMAGE", direction: OUT)
+}
+
+"""
+Context or reference of a Composition (e.g. historic Event), often not directly visible
+"""
+type CompositionContext {
+  composition_context_id: Int!
+  slug: String!
+  
+  interpretations: [Interpretation!]! @relationship(type: "HAS_INTERPRETATION", direction: OUT)
+}
+
+"""
+A concrete, distinct object, figure, or shape (can have Features and can be subject or object of a Relation)
+"""
+type CompositionEntity {
+  composition_entity_id: Int!
+  slug: String!
+  
+  interpretations: [Interpretation!]! @relationship(type: "HAS_INTERPRETATION", direction: OUT)
+  partOfGroups: [CompositionGroup!]! @relationship(type: "IS_PART_OF_COMPOSITION_GROUP", direction: OUT)
+  relations: [CompositionRelation!]! @relationship(type: "HAS_COMPOSITION_RELATION", direction: OUT)
+  features: [CompositionFeature!]! @relationship(type: "HAS_COMPOSITION_FEATURE", direction: OUT)
+}
+
+"""
+Attribute or state of an Entity
+"""
+type CompositionFeature {
+  composition_feature_id: Int!
+  slug: String!
+  
+  interpretations: [Interpretation!]! @relationship(type: "HAS_INTERPRETATION", direction: OUT)
+}
+
+"""
+Atomic Interaction between two Entities
+"""
+type CompositionRelation {
+  composition_relation_id: Int!
+  slug: String!
+  
+  interpretations: [Interpretation!]! @relationship(type: "HAS_INTERPRETATION", direction: OUT)
+  relationObjects: [CompositionEntity!]! @relationship(type: "HAS_COMPOSITION_RELATION_OBJECT", direction: OUT)
+  modifiers: [CompositionModifier!]! @relationship(type: "HAS_COMPOSITION_MODIFIER", direction: OUT)
+  events: [CompositionEvent!]! @relationship(type: "HAS_COMPOSITION_EVENT", direction: OUT)
+}
+
+"""
+Instrument or mode of a Relation
+"""
+type CompositionModifier {
+  composition_modifier_id: Int!
+  slug: String!
+  
+  interpretations: [Interpretation!]! @relationship(type: "HAS_INTERPRETATION", direction: OUT)
+}
+
+"""
+A Macro-Action consisting of one or more Relations
+"""
+type CompositionEvent {
+  composition_event_id: Int!
+  slug: String!
+  
+  interpretations: [Interpretation!]! @relationship(type: "HAS_INTERPRETATION", direction: OUT)
+}
+
+"""
+Helper for connected Entities, needed for Readings
+"""
+type CompositionGroup {
+  composition_group_id: Int!
+  slug: String!
+  group_function: String
+  
+  readings: [Reading!]! @relationship(type: "HAS_READING", direction: OUT)
+}
+
+"""
+A single digital image of the related Composition
+"""
+type Image {
+  img_id: Int!
+  slug: String!
+  src_url: String!
+}
+
+"""
+A specific claim, deduction, or observation made about elements within the composition, including a certainty score and reasoning
+"""
+type Interpretation {
+  interpretation_id: Int!
+  slug: String!
+  certainty: Float! # (0 - 1.0)
+  reasoning_statement: String! # Important remark
+  timestamp: String! # YYYY-MM-DD
+  status: String! # e.G. Primary, Alternative, Outdated, Rejected
+
+  acceptedBy: [Agent!]! @relationship(type: "ACCEPTED_BY", direction: OUT)
+  rejectedBy: [Agent!]! @relationship(type: "REJECTED_BY", direction: OUT)
+  statedBy: [Agent!]! @relationship(type: "STATED_BY", direction: OUT)
+  identifiedAsConcept: [Concept!]! @relationship(type: "IDENTIFIED_AS_CONCEPT", direction: OUT)
+  supportedBy: [Architectonic!]! @relationship(type: "SUPPORTED_BY", direction: OUT)
+  impairedBy: [Architectonic!]! @relationship(type: "IMPAIRED_BY", direction: OUT)
+  dependsOn: [Interpretation!]! @relationship(type: "DEPENDS_ON", direction: OUT)
+  recognizedPattern: [Pattern!]! @relationship(type: "RECOGNIZED_PATTERN", direction: OUT)
+  sourceReferences: [SourceReference!]! @relationship(type: "HAS_SOURCE_REFERENCE", direction: OUT)
+}
+
+"""
+The entity (human or AI) responsible for stating, accepting, or rejecting an Interpretation or Reading
+"""
+type Agent {
+  agent_id: Int!
+  slug: String!
+}
+
+"""
+Represents methodological, epistemic, or structural principles underlying the reasoning process
+"""
+type Architectonic { # Sublabels: :Methodology
+  architectonic_id: Int!
+  slug: String!
+  
+  isA: [Architectonic!]! @relationship(type: "IS_A", direction: OUT)
+}
+
+"""
+A specific citation or pointing to external evidentiary material
+"""
+type SourceReference {
+  source_reference_id: Int!
+  slug: String!
+  reference: String! # e.g. page or plate
+  reference_statement: String! # Important Remark
+  
+  source: [Source!]! @relationship(type: "HAS_SOURCE", direction: OUT)
+  evidentiaryRelationships: [Architectonic!]! @relationship(type: "HAS_EVIDENTIARY_RELATIONSHIP", direction: OUT)
+}
+
+"""
+External Source of Knowledge (e.g. literature, repository, catalogue etc.)
+"""
+type Source {
+  source_id: Int!
+  slug: String!
+}
+
+"""
+OCR or textual interpretation
+"""
+type Reading {
+  reading_id: Int!
+  slug: String!
+  read_string: String!
+  certainty: Float! # (0 - 1.0)
+  lang: String!
+  reasoning_statement: String! # Important Remark
+  timestamp: String! # YYYY-MM-DD
+  status: String! # e.G. Primary, Alternative, Outdated, Rejected
+
+  impairedBy: [Architectonic!]! @relationship(type: "IMPAIRED_BY", direction: OUT)
+  acceptedBy: [Agent!]! @relationship(type: "ACCEPTED_BY", direction: OUT)
+  rejectedBy: [Agent!]! @relationship(type: "REJECTED_BY", direction: OUT)
+  statedBy: [Agent!]! @relationship(type: "STATED_BY", direction: OUT)
+}
+
+"""
+An abstract semantic taxonomy node or generalized ontology term
+"""
+type Concept { # Sublabels: :Entity, :Feature, :Relation, :Modifier, :Event, :Context
+  concept_id: Int!
+  slug: String!
+  
+  isA: [Concept!]! @relationship(type: "IS_A", direction: OUT)
+}
+
+"""
+TheA specifically recognized structural arrangement or motif found within a given composition.
+"""
+type CompositionPattern {
+  composition_pattern_id: Int!
+  slug: String!
+  
+  recognitions: [Interpretation!]! @relationship(type: "HAS_RECOGNITION", direction: OUT)
+}
+
+"""
+An abstract, high-level, generalized structural schema
+"""
+type Pattern {
+  pattern_id: Int!
+  slug: String!
+  
+  patternEntities: [PatternEntity!]! @relationship(type: "HAS_PATTERN_ENTITY", direction: OUT)
+}
+
+"""
+A concrete, distinct object, figure, or shape of a Pattern
+"""
+type PatternEntity {
+  pattern_entity_id: Int!
+  slug: String!
+  
+  concepts: [Concept!]! @relationship(type: "HAS_CONCEPT", direction: OUT)
+  patternRelations: [PatternRelation!]! @relationship(type: "HAS_PATTERN_RELATION", direction: OUT)
+}
+
+"""
+Atomic Interaction between two Entities of a Pattern
+"""
+type PatternRelation {
+  pattern_relation_id: Int!
+  slug: String!
+  
+  concepts: [Concept!]! @relationship(type: "HAS_CONCEPT", direction: OUT)
+  relationObjects: [PatternEntity!]! @relationship(type: "HAS_PATTERN_RELATION_OBJECT", direction: OUT)
+}
+
+"""
+An explicit, stated comparison evaluating the similarities of distinct compositions
+"""
+type CompositionComparison {
+  composition_comparison_id: Int!
+  slug: String!
+  similarity: Float! # (0 - 1.0)
+  reasoning_statement: String! # Important Remark
+  timestamp: String! # YYYY-MM-DD
+  
+  statedBy: [Agent!]! @relationship(type: "STATED_BY", direction: OUT)
+  asserted: [CompositionParallel!]! @relationship(type: "ASSERTED", direction: OUT)
+}
+
+"""
+Defines a structural or semantic parallel between distinct Compositions (Hub-and-Spoke)
+"""
+type CompositionParallel {
+  composition_parallel_id: Int!
+  slug: String!
+  similarity_deviation: Float! # AGG (0 - 1.0)
+  assertion_count: Int! # AGG (number of Compositions linked)
+  similarity_average: Float! # AGG (average of CompositioComparison similarities)
+
+  parallelType: [Architectonic!]! @relationship(type: "HAS_PARALLEL_TYPE", direction: OUT)
+}

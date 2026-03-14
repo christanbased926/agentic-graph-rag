@@ -1,7 +1,7 @@
 import os
 import requests
 import asyncio
-from typing import Union, List, Any
+from typing import Optional, Dict, Union, List, Any
 from google.adk.agents.llm_agent import Agent
 from mcp import ClientSession
 from mcp.client.sse import sse_client
@@ -9,7 +9,6 @@ import base64
 
 MCP_SERVER_URL = "http://fma:8002/mcp/sse"#"http://idea-agent-mcp:8001/sse"
 
-# 2. Tools
 async def explore_mcp_endpoint():
     """
     Diese Funktion verbindet sich mit dem MCP-Server und holt die verfügbaren Prompts/Tools.
@@ -26,6 +25,28 @@ async def explore_mcp_endpoint():
                 "prompts": prompt_result.prompts, 
                 "tools": tool_result.tools
             }
+
+async def get_onboarding_prompt(args: Optional[Dict[str, Any]] = None) -> str:
+    """
+    Ruft den Onboarding-Prompt vom MCP-Server ab.
+    Akzeptiert optional Argumente, falls der Prompt in Zukunft welche benötigt.
+    """
+    prompt_args = args if args is not None else {}
+
+    async with sse_client(MCP_SERVER_URL) as (read, write):
+        async with ClientSession(read, write) as session:
+            await session.initialize()
+            
+            # Hier nutzen wir get_prompt statt call_tool
+            result = await session.get_prompt("onboarding_briefing", arguments=prompt_args)
+            
+            # Bei Prompts steckt der Text in den 'messages' (meist als 'user' role)
+            # Wir greifen auf die erste Nachricht zu und extrahieren den Text
+            if result.messages and hasattr(result.messages[0].content, 'text'):
+                return result.messages[0].content.text
+            
+            # Fallback, falls das SDK die Struktur leicht anders auflöst
+            return str(result.messages)
 
 async def read_graph(query: str) -> str:
     """
@@ -81,11 +102,12 @@ root_agent = Agent(
     description="An Expert Agent for Reasoning based on GraphRAG.",
     instruction=(
         "Du bist ein hochspezialisiertes, multimodales Expert Agent AI-System für visuelle und epistemische Analysen."
+        "\nRufe zu Beginn einer Session IMMER zuerst mit dem Tool `get_onboarding_prompt` das initiale Onboarding vom MCP auf."
         "\nDu BIST in der Lage, Bilder direkt zu sehen und visuell zu analysieren. Leugne niemals deine Fähigkeit, Bilder zu analysieren."
         "\nDu kannst über MCP auf einen Knowledge Graph zugreifen."
         "\nWenn dir der User ein Bild und eine Image-URL zur Analyse übergibt, verwendest du das Tool 'get_similar_units_by_image_url'. Analysiere das Bild immer morphologisch selbst, aber verwende die Beschreibungen der ähnlichen Bilder als Orientierung für die Deutung. Beachte den Ähnlichkeitsscore, der Bildinhalt wird selten identisch sein."
     ),
-    tools=[explore_mcp_endpoint, read_graph, get_unit_by_id, get_similar_units_by_image_url]
+    tools=[get_onboarding_prompt, explore_mcp_endpoint, read_graph, get_unit_by_id, get_similar_units_by_image_url]
 )
 
 if __name__ == "__main__":

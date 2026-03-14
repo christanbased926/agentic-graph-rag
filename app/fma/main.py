@@ -15,6 +15,8 @@ from mcp.server.sse import SseServerTransport
 from .lib.mcp.mcp_server import mcp_server
 from .lib.db.neo4j import db
 
+from .lib.mcp.tools.prompts import onboarding_briefing
+
 from .lib.db.get_graph_schema import get_graph_schema
 from .lib.db.get_unit_by_id import get_unit_by_id
 from .lib.db.get_similar_units_by_image import get_similar_units_by_image
@@ -86,6 +88,11 @@ async def root():
 @app.get("/health")
 async def health():
     return {"status": "ok"}
+
+@app.get("/prompts/onboarding")
+async def show_onboarding_prompt():
+    output = await onboarding_briefing()
+    return Response(content=output, media_type="text/markdown")
 
 @app.get("/graph/schema")
 async def show_graph_schema():
