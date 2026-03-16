@@ -1,0 +1,1644 @@
+{
+  "style": {
+    "font-family": "Nunito Sans",
+    "background-color": "#F2F2F2",
+    "background-image": "",
+    "background-size": "100%",
+    "node-color": "#4C8EDA",
+    "border-width": 0,
+    "border-color": "#000000",
+    "radius": 75,
+    "node-padding": 5,
+    "node-margin": 2,
+    "outside-position": "auto",
+    "node-icon-image": "",
+    "node-background-image": "",
+    "icon-position": "inside",
+    "icon-size": 64,
+    "caption-position": "inside",
+    "caption-max-width": 200,
+    "caption-color": "#ffffff",
+    "caption-font-size": 20,
+    "caption-font-weight": "normal",
+    "label-position": "inside",
+    "label-display": "bare",
+    "label-color": "#ffffff",
+    "label-background-color": "#848484",
+    "label-border-color": "#848484",
+    "label-border-width": 3,
+    "label-font-size": 20,
+    "label-padding": 5,
+    "label-margin": 4,
+    "directionality": "directed",
+    "detail-position": "above",
+    "detail-orientation": "parallel",
+    "arrow-width": 3,
+    "arrow-color": "#848484",
+    "margin-start": 5,
+    "margin-end": 5,
+    "margin-peer": 20,
+    "attachment-start": "normal",
+    "attachment-end": "normal",
+    "relationship-icon-image": "",
+    "type-color": "#848484",
+    "type-background-color": "#F2F2F2",
+    "type-border-color": "#848484",
+    "type-border-width": 0,
+    "type-font-size": 21,
+    "type-padding": 5,
+    "property-position": "outside",
+    "property-alignment": "colon",
+    "property-color": "#848484",
+    "property-font-size": 20,
+    "property-font-weight": "normal"
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "position": {
+        "x": 1295.0425653118923,
+        "y": 2050.697027379656
+      },
+      "caption": "",
+      "labels": [
+        "Unit",
+        "Coin"
+      ],
+      "properties": {
+        "unit_id": "unit-11396-coin-cn-11396",
+        "src_url": "https://www.corpus-nummorum.eu/CN_11396",
+        "weight_in_g": "4.18",
+        "diameter_in_mm": "21"
+      },
+      "style": {
+        "node-color": "#194d33",
+        "outside-position": "bottom",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n1",
+      "position": {
+        "x": 1050.2130386145382,
+        "y": 1805.867500682302
+      },
+      "caption": "",
+      "labels": [
+        "Composition",
+        "CoinObverse"
+      ],
+      "properties": {
+        "composition_id": "composition-11396-obverse"
+      },
+      "style": {
+        "node-color": "#9f0500",
+        "outside-position": "bottom",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n2",
+      "position": {
+        "x": 1050.2130386145382,
+        "y": 1541.7152098797083
+      },
+      "caption": "",
+      "labels": [
+        "CompositionEntity"
+      ],
+      "properties": {
+        "composition_entity_id": "entity-11396-figure"
+      },
+      "style": {
+        "node-color": "#c45100",
+        "outside-position": "bottom",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n3",
+      "position": {
+        "x": 1539.8720920092464,
+        "y": 663.9570529075772
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Entity"
+      ],
+      "properties": {
+        "concept_id": "concept-zeus"
+      },
+      "style": {
+        "node-color": "#0062b1",
+        "outside-position": "top",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n4",
+      "position": {
+        "x": 2773.5880172765856,
+        "y": 1199.1660458706103
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-11396-zeus",
+        "certainty": "0.5",
+        "reasoning_statement": "The complementary use of Zeus on the reverse suggests that the figure on the obverse should also be interpreted as Zeus.",
+        "timestamp": "2026-02-18",
+        "status": "Alternative"
+      },
+      "style": {
+        "node-color": "#ab149e",
+        "outside-position": "top-right",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n5",
+      "position": {
+        "x": 3089.977888719724,
+        "y": 724.0631497717693
+      },
+      "caption": "",
+      "labels": [
+        "Architectonic",
+        "Methodology"
+      ],
+      "properties": {
+        "architectonic_id": "architectonic-missing-attributes"
+      },
+      "style": {
+        "outside-position": "top",
+        "node-color": "#4C8EDA",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n6",
+      "position": {
+        "x": 3242.7028879610657,
+        "y": 402.06942201717476
+      },
+      "caption": "",
+      "labels": [
+        "Architectonic",
+        "Methodology"
+      ],
+      "properties": {
+        "architectonic_id": "architectonic-source-of-uncertainty"
+      },
+      "style": {
+        "node-color": "#4C8EDA",
+        "label-font-size": 23,
+        "property-font-size": 20,
+        "outside-position": "top"
+      }
+    },
+    {
+      "id": "n7",
+      "position": {
+        "x": 1611.7579939389582,
+        "y": 1710.945004706518
+      },
+      "caption": "",
+      "labels": [
+        "Agent",
+        "HumanAgent"
+      ],
+      "properties": {
+        "agent_id": "agent-human-researcher"
+      },
+      "style": {
+        "node-color": "#653294",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n8",
+      "position": {
+        "x": 2770.298349499921,
+        "y": 2050.697027379656
+      },
+      "caption": "",
+      "labels": [
+        "SourceReference"
+      ],
+      "properties": {
+        "source_reference_id": "reference-11396z-tachev-2019",
+        "reference_statement": "Tachev stated Zeus, no reasoning",
+        "reference": "P. 180-181, nr. 4, pl. 1"
+      },
+      "style": {
+        "outside-position": "top",
+        "node-color": "#16a5a5",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n12",
+      "position": {
+        "x": 1295.0425653118923,
+        "y": 663.9570529075772
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Entity"
+      ],
+      "properties": {
+        "concept_id": "concept-poseidon"
+      },
+      "style": {
+        "node-color": "#0062b1",
+        "outside-position": "top",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n13",
+      "position": {
+        "x": 2123.5369527748835,
+        "y": 1199.1660458705926
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-11396-poseidon",
+        "certainty": "0.4",
+        "reasoning_statement": "This form of depiction is documented for Poseidon, but not for this mint.",
+        "timestamp": "2026-02-18",
+        "status": "Alternative"
+      },
+      "style": {
+        "node-color": "#ab149e",
+        "outside-position": "bottom",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n14",
+      "position": {
+        "x": 1418.4183341098942,
+        "y": 402.06942201717476
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Entity"
+      ],
+      "properties": {
+        "concept_id": "concept-deity"
+      },
+      "style": {
+        "node-color": "#0062b1",
+        "outside-position": "top",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n15",
+      "position": {
+        "x": 1050.2130386145382,
+        "y": 986.7396792215588
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-11396-figure",
+        "certainty": "1.0",
+        "reasoning_statement": "Morphologically human, but could be a deity",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {
+        "node-color": "#ab149e",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n16",
+      "position": {
+        "x": 1050.2130386145382,
+        "y": 158.95410762425536
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Entity"
+      ],
+      "properties": {
+        "concept_id": "concept-figure"
+      },
+      "style": {
+        "node-color": "#0062b1",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n17",
+      "position": {
+        "x": 823.6512302751124,
+        "y": 1315.1534015402824
+      },
+      "caption": "",
+      "labels": [
+        "CompositionFeature"
+      ],
+      "properties": {
+        "composition_feature_id": "feature-11396-portrait"
+      },
+      "style": {
+        "node-color": "#c45100",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n18",
+      "position": {
+        "x": 823.6512302751124,
+        "y": 989.2769041238466
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-11396-portrait",
+        "certainty": "1.0",
+        "reasoning_statement": "Clear visual truncation, shoulder line",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {
+        "node-color": "#ab149e",
+        "label-font-size": 23,
+        "outside-position": "bottom",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n19",
+      "position": {
+        "x": 823.6512302751124,
+        "y": 663.9570529075772
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Feature"
+      ],
+      "properties": {
+        "concept_id": "concept-portrait"
+      },
+      "style": {
+        "node-color": "#0062b1",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n20",
+      "position": {
+        "x": 2617.062923082226,
+        "y": 702.5861967534556
+      },
+      "caption": "",
+      "labels": [
+        "Architectonic",
+        "Methodology"
+      ],
+      "properties": {
+        "architectonic_id": "architectonic-complementarity"
+      },
+      "style": {
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n21",
+      "position": {
+        "x": 2387.326972912131,
+        "y": 472.85024658336073
+      },
+      "caption": "",
+      "labels": [
+        "Architectonic",
+        "Methodology"
+      ],
+      "properties": {
+        "architectonic_id": "architectonic-supporting-observation"
+      },
+      "style": {
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n22",
+      "position": {
+        "x": 3926.11054273988,
+        "y": 2050.697027379656
+      },
+      "caption": "",
+      "labels": [
+        "SourceReference"
+      ],
+      "properties": {
+        "source_reference_id": "reference-11396z-jurukova-1981",
+        "reference_statement": "Jurukova stated Poseidon, no reasoning",
+        "reference": "P. 79, nr. 170, pl. 28, fig. 170"
+      },
+      "style": {
+        "node-color": "#16a5a5",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n23",
+      "position": {
+        "x": 574.8894684386883,
+        "y": 1312.0595304378282
+      },
+      "caption": "",
+      "labels": [
+        "CompositionFeature"
+      ],
+      "properties": {
+        "composition_feature_id": "feature-11396-bearded"
+      },
+      "style": {
+        "node-color": "#c45100",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n24",
+      "position": {
+        "x": 574.8894684386883,
+        "y": 986.7396792215588
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-11396-bearded",
+        "certainty": "1.0",
+        "reasoning_statement": "A beard is clearly observable",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {
+        "node-color": "#ab149e",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n25",
+      "position": {
+        "x": 574.8894684386883,
+        "y": 661.4198280052894
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Feature"
+      ],
+      "properties": {
+        "concept_id": "concept-bearded"
+      },
+      "style": {
+        "node-color": "#0062b1",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n26",
+      "position": {
+        "x": 321.0131971062753,
+        "y": 1312.6161766379946
+      },
+      "caption": "",
+      "labels": [
+        "CompositionFeature"
+      ],
+      "properties": {
+        "composition_feature_id": "feature-11396-male"
+      },
+      "style": {
+        "node-color": "#c45100",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n27",
+      "position": {
+        "x": 321.0131971062753,
+        "y": 986.7396792215588
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-11396-male",
+        "certainty": "1.0",
+        "reasoning_statement": "Typical male attribute (beard)",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {
+        "node-color": "#ab149e",
+        "label-font-size": 23,
+        "outside-position": "left",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n28",
+      "position": {
+        "x": 321.0131971062753,
+        "y": 661.4198280052894
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Feature"
+      ],
+      "properties": {
+        "concept_id": "concept-male"
+      },
+      "style": {
+        "node-color": "#0062b1",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n29",
+      "position": {
+        "x": 823.6512302751124,
+        "y": 402.06942201717476
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Feature"
+      ],
+      "properties": {
+        "concept_id": "concept-visual-scope"
+      },
+      "style": {
+        "node-color": "#0062b1",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n31",
+      "position": {
+        "x": 2501.6375870799247,
+        "y": 2319.3577897996524
+      },
+      "caption": "",
+      "labels": [
+        "Source"
+      ],
+      "properties": {
+        "source_id": " source-tachev-2019",
+        "zotero_url": "https://www.zotero.org/groups/163139/thrakien/items/KVI53PAJ",
+        "title": "Tachev, The Coinage of Bizye, Sofija 2019"
+      },
+      "style": {
+        "outside-position": "bottom",
+        "node-color": "#0c797d",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n32",
+      "position": {
+        "x": 3660.41314038597,
+        "y": 2279.1513194822746
+      },
+      "caption": "",
+      "labels": [
+        "Source"
+      ],
+      "properties": {
+        "source_id": "source-jurukova-1981",
+        "zotero_url": "https://www.zotero.org/groups/163139/thrakien/items/7NDGISAV",
+        "title": "Jurukova, Die Münzprägung von Bizye, Berlin 1981"
+      },
+      "style": {
+        "node-color": "#0c797d",
+        "label-font-size": 23,
+        "outside-position": "right",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n33",
+      "position": {
+        "x": 3500.497851234267,
+        "y": 1489.572771878613
+      },
+      "caption": "",
+      "labels": [
+        "Architectonic",
+        "Methodology"
+      ],
+      "properties": {
+        "architectonic_id": "architectonic-concurring"
+      },
+      "style": {
+        "outside-position": "bottom",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n34",
+      "position": {
+        "x": 3799.776670613378,
+        "y": 1489.572771878613
+      },
+      "caption": "",
+      "labels": [
+        "Architectonic",
+        "Methodology"
+      ],
+      "properties": {
+        "architectonic_id": "architectonic-conflicting"
+      },
+      "style": {
+        "outside-position": "bottom",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n35",
+      "position": {
+        "x": 3660.41314038597,
+        "y": 1312.0595304378282
+      },
+      "caption": "",
+      "labels": [
+        "Architectonic",
+        "Methodology"
+      ],
+      "properties": {
+        "architectonic_id": "architectonic-evidentiary-relationship"
+      },
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n36",
+      "position": {
+        "x": 2123.5369527748835,
+        "y": 2050.697027379656
+      },
+      "caption": "",
+      "labels": [
+        "SourceReference"
+      ],
+      "properties": {
+        "source_reference_id": "reference-11396p-tachev-2019",
+        "reference_statement": "Tachev stated Zeus, no reasoning",
+        "reference": "P. 180-181, nr. 4, pl. 1"
+      },
+      "style": {
+        "outside-position": "top",
+        "node-color": "#16a5a5",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n37",
+      "position": {
+        "x": 3335.3105949448686,
+        "y": 2050.697027379656
+      },
+      "caption": "",
+      "labels": [
+        "SourceReference"
+      ],
+      "properties": {
+        "source_reference_id": "reference-11396p-jurukova-1981",
+        "reference_statement": "Jurukova stated Poseidon, no reasoning",
+        "reference": "P. 79, nr. 170, pl. 28, fig. 170"
+      },
+      "style": {
+        "node-color": "#16a5a5",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n38",
+      "position": {
+        "x": 2123.5369527748835,
+        "y": 702.5861967534556
+      },
+      "caption": "",
+      "labels": [
+        "Architectonic",
+        "Methodology"
+      ],
+      "properties": {
+        "architectonic_id": "architectonic-known-iconographic-cheme"
+      },
+      "style": {
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n39",
+      "position": {
+        "x": 3428.6060533575514,
+        "y": 724.0631497717684
+      },
+      "caption": "",
+      "labels": [
+        "Architectonic",
+        "Methodology"
+      ],
+      "properties": {
+        "architectonic_id": "architectonic-no-local-iconographical-tradition"
+      },
+      "style": {}
+    },
+    {
+      "id": "n40",
+      "position": {
+        "x": 574.8894684386883,
+        "y": 1805.8675006823019
+      },
+      "caption": "",
+      "labels": [
+        "Image"
+      ],
+      "properties": {
+        "img_id": "img-11396-obverse",
+        "src_url": "https://data.corpus-nummorum.eu/storage/coins/11396/img/12963/o/thumbnails/lg.jpeg",
+        "name": "11396o"
+      },
+      "style": {}
+    },
+    {
+      "id": "n41",
+      "position": {
+        "x": 440.49281209682454,
+        "y": 2427.2125033089683
+      },
+      "caption": "",
+      "labels": [
+        "UnitProductionPlace"
+      ],
+      "properties": {
+        "unit_production_place_id": "production-11396-bizya"
+      },
+      "style": {}
+    },
+    {
+      "id": "n42",
+      "position": {
+        "x": 823.6512302751124,
+        "y": 2427.2125033089683
+      },
+      "caption": "",
+      "labels": [
+        "UnitDenomination"
+      ],
+      "properties": {
+        "unit_denomination_id": "denomination-11396-one-and-half"
+      },
+      "style": {}
+    },
+    {
+      "id": "n43",
+      "position": {
+        "x": 1179.1115025584002,
+        "y": 2427.2125033089683
+      },
+      "caption": "",
+      "labels": [
+        "UnitMaterial"
+      ],
+      "properties": {
+        "unit_material_id": "material-11396-bronze"
+      },
+      "style": {}
+    },
+    {
+      "id": "n45",
+      "position": {
+        "x": 440.49281209682454,
+        "y": 2726.8582139798195
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-11396-minting",
+        "certainty": "1.0",
+        "reasoning_statement": "",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {
+        "outside-position": "left"
+      }
+    },
+    {
+      "id": "n46",
+      "position": {
+        "x": 823.6512302751124,
+        "y": 2726.8582139798195
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-11396-denomination",
+        "certainty": "1.0",
+        "reasoning_statement": "Based on weight, size and material",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {}
+    },
+    {
+      "id": "n47",
+      "position": {
+        "x": 1179.1115025584002,
+        "y": 2726.8582139798195
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-11396-material",
+        "certainty": "1.0",
+        "reasoning_statement": "Attestet by autopsy",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {}
+    },
+    {
+      "id": "n48",
+      "position": {
+        "x": 1512.423876693741,
+        "y": 2427.2125033089683
+      },
+      "caption": "",
+      "labels": [
+        "UnitDating"
+      ],
+      "properties": {
+        "dating_id": "dating-11396-roman-imperial-time",
+        "year_min": "138",
+        "year_max": "161",
+        "reasoning_statement": "During the reign of Antoninus Pius",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {}
+    },
+    {
+      "id": "n49",
+      "position": {
+        "x": 440.49281209682454,
+        "y": 3002.4011067649194
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Location"
+      ],
+      "properties": {
+        "concept_id": "concept-bizya"
+      },
+      "style": {
+        "outside-position": "bottom"
+      }
+    },
+    {
+      "id": "n50",
+      "position": {
+        "x": 440.49281209682454,
+        "y": 3338.3233420306083
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Location"
+      ],
+      "properties": {
+        "concept_id": "concept-thrace"
+      },
+      "style": {}
+    },
+    {
+      "id": "n51",
+      "position": {
+        "x": 823.6512302751124,
+        "y": 3002.4011067649194
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Denomination"
+      ],
+      "properties": {
+        "concept_id": "oneandahalf-unit"
+      },
+      "style": {}
+    },
+    {
+      "id": "n52",
+      "position": {
+        "x": 1179.1115025584002,
+        "y": 3002.4011067649194
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Material"
+      ],
+      "properties": {
+        "material_id": "concept-bronze"
+      },
+      "style": {}
+    }
+  ],
+  "relationships": [
+    {
+      "id": "n0",
+      "fromId": "n0",
+      "toId": "n1",
+      "type": "HAS_COMPOSITION",
+      "properties": {},
+      "style": {
+        "detail-orientation": "parallel",
+        "property-font-size": 20,
+        "attachment-start": "top"
+      }
+    },
+    {
+      "id": "n1",
+      "fromId": "n1",
+      "toId": "n2",
+      "type": "HAS_COMPOSITION_ENTITY",
+      "properties": {},
+      "style": {
+        "detail-orientation": "parallel",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n2",
+      "fromId": "n2",
+      "toId": "n4",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {
+        "detail-orientation": "parallel",
+        "property-font-size": 20,
+        "attachment-start": "top",
+        "attachment-end": "normal"
+      }
+    },
+    {
+      "id": "n3",
+      "fromId": "n4",
+      "toId": "n3",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n4",
+      "fromId": "n5",
+      "toId": "n6",
+      "type": "IS_A",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n8",
+      "fromId": "n4",
+      "toId": "n8",
+      "type": "HAS_SOURCE_REFERENCE",
+      "properties": {},
+      "style": {
+        "property-font-size": 20,
+        "attachment-start": "right"
+      }
+    },
+    {
+      "id": "n9",
+      "fromId": "n4",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n10",
+      "fromId": "n13",
+      "toId": "n12",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n12",
+      "fromId": "n2",
+      "toId": "n13",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {
+        "property-font-size": 20,
+        "attachment-start": "top"
+      }
+    },
+    {
+      "id": "n14",
+      "fromId": "n4",
+      "toId": "n5",
+      "type": "IMPAIRED_BY",
+      "properties": {},
+      "style": {
+        "property-font-size": 20,
+        "attachment-start": "right"
+      }
+    },
+    {
+      "id": "n15",
+      "fromId": "n3",
+      "toId": "n14",
+      "type": "IS_A",
+      "properties": {},
+      "style": {
+        "property-font-size": 20,
+        "attachment-start": "top"
+      }
+    },
+    {
+      "id": "n16",
+      "fromId": "n12",
+      "toId": "n14",
+      "type": "IS_A",
+      "properties": {},
+      "style": {
+        "property-font-size": 20,
+        "attachment-start": "top"
+      }
+    },
+    {
+      "id": "n17",
+      "fromId": "n2",
+      "toId": "n15",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {
+        "attachment-start": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n18",
+      "fromId": "n15",
+      "toId": "n16",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n19",
+      "fromId": "n14",
+      "toId": "n16",
+      "type": "IS_A",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n20",
+      "fromId": "n2",
+      "toId": "n17",
+      "type": "HAS_COMPOSITION_FEATURE",
+      "properties": {},
+      "style": {
+        "attachment-start": "left",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n21",
+      "fromId": "n17",
+      "toId": "n18",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n22",
+      "fromId": "n18",
+      "toId": "n19",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n23",
+      "fromId": "n4",
+      "toId": "n20",
+      "type": "SUPPORTED_BY",
+      "properties": {},
+      "style": {
+        "attachment-start": "right",
+        "attachment-end": "normal",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n24",
+      "fromId": "n20",
+      "toId": "n21",
+      "type": "IS_A",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n25",
+      "fromId": "n4",
+      "toId": "n22",
+      "type": "HAS_SOURCE_REFERENCE",
+      "properties": {},
+      "style": {
+        "attachment-start": "right",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n26",
+      "fromId": "n23",
+      "toId": "n24",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n27",
+      "fromId": "n24",
+      "toId": "n25",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n28",
+      "fromId": "n26",
+      "toId": "n27",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n29",
+      "fromId": "n27",
+      "toId": "n28",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n30",
+      "fromId": "n2",
+      "toId": "n23",
+      "type": "HAS_COMPOSITION_FEATURE",
+      "properties": {},
+      "style": {
+        "attachment-start": "left",
+        "attachment-end": "normal",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n31",
+      "fromId": "n2",
+      "toId": "n26",
+      "type": "HAS_COMPOSITION_FEATURE",
+      "properties": {},
+      "style": {
+        "attachment-start": "left",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n32",
+      "fromId": "n19",
+      "toId": "n29",
+      "type": "IS_A",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n34",
+      "fromId": "n8",
+      "toId": "n31",
+      "type": "HAS_SOURCE",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n35",
+      "fromId": "n22",
+      "toId": "n32",
+      "type": "HAS_SOURCE",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n36",
+      "fromId": "n8",
+      "toId": "n33",
+      "type": "HAS_EVIDENTIARY_RELATIONSHIP",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n37",
+      "fromId": "n22",
+      "toId": "n34",
+      "type": "HAS_EVIDENTIARY_RELATIONSHIP",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n38",
+      "fromId": "n33",
+      "toId": "n35",
+      "type": "IS_A",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n39",
+      "fromId": "n34",
+      "toId": "n35",
+      "type": "IS_A",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n40",
+      "fromId": "n36",
+      "toId": "n31",
+      "type": "HAS_SOURCE",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n41",
+      "fromId": "n36",
+      "toId": "n34",
+      "type": "HAS_EVIDENTIARY_RELATIONSHIP",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n42",
+      "fromId": "n37",
+      "toId": "n32",
+      "type": "HAS_SOURCE",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n43",
+      "fromId": "n37",
+      "toId": "n33",
+      "type": "HAS_EVIDENTIARY_RELATIONSHIP",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n44",
+      "fromId": "n13",
+      "toId": "n36",
+      "type": "HAS_SOURCE_REFERENCE",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n45",
+      "fromId": "n13",
+      "toId": "n37",
+      "type": "HAS_SOURCE_REFERENCE",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n46",
+      "fromId": "n13",
+      "toId": "n5",
+      "type": "IMPAIRED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n47",
+      "fromId": "n38",
+      "toId": "n21",
+      "type": "IS_A",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n48",
+      "fromId": "n13",
+      "toId": "n38",
+      "type": "SUPPORTED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n49",
+      "fromId": "n13",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n50",
+      "fromId": "n13",
+      "toId": "n39",
+      "type": "IMPAIRED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n51",
+      "fromId": "n39",
+      "toId": "n6",
+      "type": "IS_A",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n52",
+      "fromId": "n1",
+      "toId": "n40",
+      "type": "HAS_IMAGE",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n53",
+      "fromId": "n0",
+      "toId": "n41",
+      "type": "HAS_PRODUCTION_PLACE",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n54",
+      "fromId": "n0",
+      "toId": "n42",
+      "type": "HAS_DENOMINATION",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n55",
+      "fromId": "n0",
+      "toId": "n43",
+      "type": "HAS_MATERIAL",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n57",
+      "fromId": "n41",
+      "toId": "n45",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n58",
+      "fromId": "n42",
+      "toId": "n46",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n59",
+      "fromId": "n43",
+      "toId": "n47",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n61",
+      "fromId": "n45",
+      "toId": "n49",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n62",
+      "fromId": "n49",
+      "toId": "n50",
+      "type": "IS_A",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n63",
+      "fromId": "n46",
+      "toId": "n51",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n64",
+      "fromId": "n47",
+      "toId": "n52",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n65",
+      "fromId": "n0",
+      "toId": "n48",
+      "type": "HAS_DATING",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n66",
+      "fromId": "n15",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n67",
+      "fromId": "n18",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n68",
+      "fromId": "n24",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n69",
+      "fromId": "n27",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n70",
+      "fromId": "n45",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n71",
+      "fromId": "n46",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n72",
+      "fromId": "n47",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n73",
+      "fromId": "n48",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    }
+  ]
+}

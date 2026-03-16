@@ -5,17 +5,16 @@ type Unit { # Sublabels: :Coin
   unit_id: Int!
   slug: String!
   src_url: String # original source of dataset
-  nomisma_mint: String # (:Coin)
-  nomisma_material: String # (:Coin)
-  nomisma_denomination: String # (:Coin)
-  year_min: Int  # (:Coin) - neg. values vor BC
-  year_max: Int  # (:Coin) - neg. values vor BC
   
   compositions: [Composition!]! @relationship(type: "HAS_COMPOSITION", direction: OUT)
+  datings: [UnitDating!]! @relationship(type: "HAS_DATING", direction: OUT)
+  productionPlaces: [UnitProductionPlace!]! @relationship(type: "HAS_PRODUCTION_PLACE", direction: OUT)
+  materials: [UnitMaterial!]! @relationship(type: "HAS_MATERIAL", direction: OUT)
+  denominations: [UnitDenomination!]! @relationship(type: "HAS_DENOMINATION", direction: OUT)
 }
 
 """
-Represents a specific visual or structural arrangement on/in the Unit
+Specific visual or structural arrangement on/in the Unit
 """
 type Composition { # Sublabels: :CoinObverse, :CoinReverse
   composition_id: Int!
@@ -41,7 +40,7 @@ type CompositionContext {
 }
 
 """
-A concrete, distinct object, figure, or shape (can have Features and can be subject or object of a Relation)
+Concrete, distinct object, figure, or shape (can have Features and can be subject or object of a Relation)
 """
 type CompositionEntity {
   composition_entity_id: Int!
@@ -87,7 +86,7 @@ type CompositionModifier {
 }
 
 """
-A Macro-Action consisting of one or more Relations
+Macro-Action consisting of one or more Relations
 """
 type CompositionEvent {
   composition_event_id: Int!
@@ -102,22 +101,23 @@ Helper for connected Entities, needed for Readings
 type CompositionGroup {
   composition_group_id: Int!
   slug: String!
-  group_function: String
+  group_function: String! # e.g. TextContainer, ConflictingAnnotation
   
   readings: [Reading!]! @relationship(type: "HAS_READING", direction: OUT)
 }
 
 """
-A single digital image of the related Composition
+Single digital image of the related Composition
 """
 type Image {
   img_id: Int!
   slug: String!
   src_url: String!
+  name: String!
 }
 
 """
-A specific claim, deduction, or observation made about elements within the composition, including a certainty score and reasoning
+Specific claim, deduction, or observation made about elements within the composition, including a certainty score and reasoning
 """
 type Interpretation {
   interpretation_id: Int!
@@ -139,7 +139,7 @@ type Interpretation {
 }
 
 """
-The entity (human or AI) responsible for stating, accepting, or rejecting an Interpretation or Reading
+(human or AI) responsible for stating, accepting, or rejecting an Interpretation or Reading
 """
 type Agent {
   agent_id: Int!
@@ -147,7 +147,7 @@ type Agent {
 }
 
 """
-Represents methodological, epistemic, or structural principles underlying the reasoning process
+Methodological, epistemic, or structural principles underlying the reasoning process
 """
 type Architectonic { # Sublabels: :Methodology
   architectonic_id: Int!
@@ -157,7 +157,7 @@ type Architectonic { # Sublabels: :Methodology
 }
 
 """
-A specific citation or pointing to external evidentiary material
+Specific citation or pointing to external evidentiary material
 """
 type SourceReference {
   source_reference_id: Int!
@@ -197,9 +197,9 @@ type Reading {
 }
 
 """
-An abstract semantic taxonomy node or generalized ontology term
+Abstract semantic taxonomy node or generalized ontology term
 """
-type Concept { # Sublabels: :Entity, :Feature, :Relation, :Modifier, :Event, :Context
+type Concept { # Sublabels: :Entity, :Feature, :Relation, :Modifier, :Event, :Context, (only for Unit: :Location, :Denomination, :Material)
   concept_id: Int!
   slug: String!
   
@@ -207,7 +207,7 @@ type Concept { # Sublabels: :Entity, :Feature, :Relation, :Modifier, :Event, :Co
 }
 
 """
-TheA specifically recognized structural arrangement or motif found within a given composition.
+Specifically recognized structural arrangement or motif found within a given composition.
 """
 type CompositionPattern {
   composition_pattern_id: Int!
@@ -217,7 +217,7 @@ type CompositionPattern {
 }
 
 """
-An abstract, high-level, generalized structural schema
+Abstract, high-level, generalized structural schema
 """
 type Pattern {
   pattern_id: Int!
@@ -227,7 +227,7 @@ type Pattern {
 }
 
 """
-A concrete, distinct object, figure, or shape of a Pattern
+Concrete, distinct object, figure, or shape of a Pattern
 """
 type PatternEntity {
   pattern_entity_id: Int!
@@ -249,7 +249,7 @@ type PatternRelation {
 }
 
 """
-An explicit, stated comparison evaluating the similarities of distinct compositions
+Explicit, stated comparison evaluating the similarities of distinct compositions
 """
 type CompositionComparison {
   composition_comparison_id: Int!
@@ -263,7 +263,7 @@ type CompositionComparison {
 }
 
 """
-Defines a structural or semantic parallel between distinct Compositions (Hub-and-Spoke)
+Structural or semantic parallel between distinct Compositions (Hub-and-Spoke)
 """
 type CompositionParallel {
   composition_parallel_id: Int!
@@ -273,4 +273,56 @@ type CompositionParallel {
   similarity_average: Float! # AGG (average of CompositioComparison similarities)
 
   parallelType: [Architectonic!]! @relationship(type: "HAS_PARALLEL_TYPE", direction: OUT)
+}
+
+"""
+Proxy for production place of Unit
+"""
+type UnitProductionPlace {
+  unit_production_place_id: Int!
+
+  interpretations: [Interpretation!]! @relationship(type: "HAS_INTERPRETATION", direction: OUT)
+}
+
+
+"""
+Proxy for denomination place of Unit (:Coin)
+"""
+type UnitDenomination {
+  unit_denomination_id: Int!
+
+  interpretations: [Interpretation!]! @relationship(type: "HAS_INTERPRETATION", direction: OUT)
+}
+
+
+"""
+Proxy for material of Unit
+"""
+type UnitMaterial {
+  unit_material_id: Int!
+  
+  interpretations: [Interpretation!]! @relationship(type: "HAS_INTERPRETATION", direction: OUT)
+}
+
+
+"""
+Asserted date, uses year range instead of certainty (:Coin)
+"""
+type UnitDating {
+  dating_id: Int!
+  year_min: Int  # (:Coin) - neg. values vor BC
+  year_max: Int  # (:Coin) - neg. values vor BC
+  slug: String!
+  reasoning_statement: String! # Important remark
+  timestamp: String! # YYYY-MM-DD
+  status: String! # e.G. Primary, Alternative, Outdated, Rejected
+
+  acceptedBy: [Agent!]! @relationship(type: "ACCEPTED_BY", direction: OUT)
+  rejectedBy: [Agent!]! @relationship(type: "REJECTED_BY", direction: OUT)
+  statedBy: [Agent!]! @relationship(type: "STATED_BY", direction: OUT)
+  supportedBy: [Architectonic!]! @relationship(type: "SUPPORTED_BY", direction: OUT)
+  impairedBy: [Architectonic!]! @relationship(type: "IMPAIRED_BY", direction: OUT)
+  dependsOn: [Interpretation!]! @relationship(type: "DEPENDS_ON", direction: OUT)
+  recognizedPattern: [Pattern!]! @relationship(type: "RECOGNIZED_PATTERN", direction: OUT)
+  sourceReferences: [SourceReference!]! @relationship(type: "HAS_SOURCE_REFERENCE", direction: OUT)
 }

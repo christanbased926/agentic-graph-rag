@@ -18,6 +18,7 @@ from .lib.db.neo4j import db
 from .lib.mcp.tools.prompts import onboarding_briefing
 
 from .lib.db.get_graph_schema import get_graph_schema
+from .lib.db.get_ontology import get_ontology
 from .lib.db.get_unit_by_id import get_unit_by_id
 from .lib.db.get_similar_units_by_image import get_similar_units_by_image
 from .lib.db.get_similar_units_by_url import get_similar_units_by_url
@@ -111,6 +112,19 @@ async def show_graph_schema():
         }
     except Exception as e:
         return {"status": "error", "message": str(e)}
+
+@app.get("/data/ontology")
+async def show_ontology():
+    """
+    Show concept taxonomy.
+    """
+    try:
+        result = await get_ontology()
+
+        return Response(content=result, media_type="text/markdown")
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Server Error: {str(e)}")
 
 @app.get("/data/units/{id}")
 async def get_single_unit(id: str):

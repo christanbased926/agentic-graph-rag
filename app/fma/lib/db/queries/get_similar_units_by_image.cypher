@@ -1,4 +1,4 @@
-CALL db.index.vector.queryNodes('image_embeddings_index', 3, $vector) 
+CALL db.index.vector.queryNodes('image_embeddings_index', 1, $vector) // 3
     YIELD node AS img, score
     WHERE score >= 0.5
     

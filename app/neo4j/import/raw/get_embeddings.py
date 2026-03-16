@@ -22,7 +22,7 @@ def extract_image_data(filepath: str) -> list[dict]:
     image_data = []
     for block in blocks:
         # 2. Extrahiere slug und src_url aus dem Block
-        slug_match = re.search(r'slug:\s*"([^"]+)"', block)
+        slug_match = re.search(r'name:\s*"([^"]+)"', block)
         url_match = re.search(r'src_url:\s*"([^"]+)"', block)
         
         if slug_match and url_match:

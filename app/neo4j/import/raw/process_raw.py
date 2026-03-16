@@ -25,7 +25,7 @@ def generate_slug(val):
     """
     parts = val.split('-', 1) # Splittet beim ERSTEN Bindestrich
     if len(parts) > 1:
-        slug = parts[1]
+        slug = re.sub(r"^\d+.*?-(.+)", r"\1", parts[1])
         return slug
     return val
 
