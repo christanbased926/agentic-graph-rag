@@ -1,9 +1,146 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <title>Mein Prototyp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <title>Katalog</title>
+    <style>
+        /* Grundlegendes Theme: Slate Grau */
+        body {
+            background-color: #1e293b; /* slate-800 */
+            color: #f8fafc; /* slate-50 */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        /* Äußeres Grid: Max 1600px, 4 Spalten */
+        .catalogue-container {
+            max-width: 1800px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+
+        /* Kachel für eine Unit */
+        .unit-tile {
+            background-color: #334155; /* slate-700 */
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Inneres Grid: Compositions/Images (Spaltenzahl wird inline generiert) */
+        .compositions-grid {
+            display: grid;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .composition-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Bild-Styling */
+        .composition-item img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1; /* Hält die Bilder quadratisch, falls gewünscht */
+            object-fit: cover;
+            border-radius: 4px;
+            background-color: #475569; /* slate-600 als Platzhalter-Farbe */
+            margin-bottom: 8px;
+        }
+
+        .composition-slug {
+            font-size: 0.8rem;
+            color: #cbd5e1; /* slate-300 */
+            word-break: break-all;
+            cursor: default;
+        }
+
+        /* Unit Info am unteren Rand der Kachel */
+        .unit-info {
+            text-align: center;
+            margin-top: auto; /* Drückt die Info nach unten */
+            padding-top: 16px;
+            border-top: 1px solid #475569; /* slate-600 */
+        }
+
+        .unit-link {
+            display: inline-block;
+            background-color: #475569; /* slate-600 */
+            color: #f8fafc;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background-color 0.2s ease;
+        }
+
+        .unit-link:hover {
+            background-color: #64748b; /* slate-500 */
+        }
+
+        .unit-src {
+            text-align: center;
+            margin-top: auto; /* Drückt die Info nach unten */
+            padding-top: 4px;
+        }
+
+        .unit-src-link {
+            display: inline-block;
+            color: #f8fafc;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            transition: color 0.2s ease;
+        }
+
+        /* Responsives Design für kleinere Bildschirme */
+        @media (max-width: 1200px) { .catalogue-container { grid-template-columns: repeat(3, 1fr); } }
+        @media (max-width: 900px)  { .catalogue-container { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px)  { .catalogue-container { grid-template-columns: 1fr; } }
+    </style>
 </head>
 <body>
-    <h1>Willkommen</h1>
+
+    <div class="catalogue-container">
+        {% for unit in units %}
+        <div class="unit-tile">
+            
+            <div class="compositions-grid" style="grid-template-columns: repeat({{ unit.compositions|length }}, 1fr);">
+                {% for comp in unit.compositions %}
+                <div class="composition-item">
+                    <a href="{{ comp.url }}" target="_blank">
+                        <img src="{{ comp.url }}" alt="{{ comp.slug }}">
+                    </a>
+                    <span class="composition-slug">{{ comp.slug }}</span>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="unit-info">
+                <a href="/data/units/{{ unit.unit_id }}" class="unit-link" target="_blank">Unit {{ unit.unit_id }}</a>
+            </div>
+
+            <div class="unit-src">
+                <a href="{{ unit.src_url }}" class="unit-src-link" target="_blank">{{ unit.src_url }}</a>
+            </div>
+
+        </div>
+        {% endfor %}
+    </div>
+
 </body>
 </html>

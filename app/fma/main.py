@@ -5,7 +5,7 @@ from contextlib import asynccontextmanager
 from typing import Union, List, Annotated
 
 from fastapi import FastAPI, Response, Request, HTTPException, Depends, Query, HTTPException, UploadFile, File
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
@@ -19,6 +19,7 @@ from .lib.mcp.tools.prompts import onboarding_briefing
 
 from .lib.db.get_graph_schema import get_graph_schema
 from .lib.db.get_ontology import get_ontology
+from .lib.db.get_units_and_images import get_units_and_images
 from .lib.db.get_unit_by_id import get_unit_by_id
 from .lib.db.get_similar_units_by_image import get_similar_units_by_image
 from .lib.db.get_similar_units_by_url import get_similar_units_by_url
@@ -73,13 +74,20 @@ app.mount("/mcp", mcp_asgi_app)
 # --- Static / HTML ---
 
 app.mount("/static", StaticFiles(directory="/app/app/static"), name="static")
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="/app/app/templates")
+
+@app.get("/favicon.ico", include_in_schema=False)
+async def favicon():
+    return FileResponse("/app/app/static/favicon.ico")
 
 @app.get("/catalogue", response_class=HTMLResponse)
-async def read_root(request: Request):
-    # 'request' muss zwingend an das Template übergeben werden
+async def show_catalogue(request: Request):
+    data = await get_units_and_images()
+    
+    # Daten an das Template übergeben
     return templates.TemplateResponse(
-        request=request, name="catalogue.html", context={"id": "Prototype 1.0"}
+        "catalogue.html", 
+        {"request": request, "units": data}
     )
 
 
