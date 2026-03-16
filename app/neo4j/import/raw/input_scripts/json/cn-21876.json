@@ -1,0 +1,1333 @@
+{
+  "style": {
+    "font-family": "Nunito Sans",
+    "background-color": "#F2F2F2",
+    "background-image": "",
+    "background-size": "100%",
+    "node-color": "#4C8EDA",
+    "border-width": 0,
+    "border-color": "#000000",
+    "radius": 75,
+    "node-padding": 5,
+    "node-margin": 2,
+    "outside-position": "auto",
+    "node-icon-image": "",
+    "node-background-image": "",
+    "icon-position": "inside",
+    "icon-size": 64,
+    "caption-position": "inside",
+    "caption-max-width": 200,
+    "caption-color": "#ffffff",
+    "caption-font-size": 20,
+    "caption-font-weight": "normal",
+    "label-position": "inside",
+    "label-display": "bare",
+    "label-color": "#ffffff",
+    "label-background-color": "#848484",
+    "label-border-color": "#848484",
+    "label-border-width": 3,
+    "label-font-size": 20,
+    "label-padding": 5,
+    "label-margin": 4,
+    "directionality": "directed",
+    "detail-position": "above",
+    "detail-orientation": "parallel",
+    "arrow-width": 3,
+    "arrow-color": "#848484",
+    "margin-start": 5,
+    "margin-end": 5,
+    "margin-peer": 20,
+    "attachment-start": "normal",
+    "attachment-end": "normal",
+    "relationship-icon-image": "",
+    "type-color": "#848484",
+    "type-background-color": "#F2F2F2",
+    "type-border-color": "#848484",
+    "type-border-width": 0,
+    "type-font-size": 21,
+    "type-padding": 5,
+    "property-position": "outside",
+    "property-alignment": "colon",
+    "property-color": "#848484",
+    "property-font-size": 20,
+    "property-font-weight": "normal"
+  },
+  "nodes": [
+    {
+      "id": "n0",
+      "position": {
+        "x": 1086.529368205617,
+        "y": 1966.7429197554006
+      },
+      "caption": "",
+      "labels": [
+        "Unit",
+        "Coin"
+      ],
+      "properties": {
+        "unit_id": "unit-21876-coin-cn-21876",
+        "src_url": "https://www.corpus-nummorum.eu/CN_21876",
+        "weight_in_g": "16.05",
+        "diameter_in_mm": "17"
+      },
+      "style": {
+        "node-color": "#194d33",
+        "outside-position": "bottom",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n1",
+      "position": {
+        "x": 841.6998415082628,
+        "y": 1721.9133930580467
+      },
+      "caption": "",
+      "labels": [
+        "Composition",
+        "CoinObverse"
+      ],
+      "properties": {
+        "composition_id": "composition-21876-obverse"
+      },
+      "style": {
+        "node-color": "#9f0500",
+        "outside-position": "bottom",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n2",
+      "position": {
+        "x": 841.6998415082628,
+        "y": 1457.761102255453
+      },
+      "caption": "",
+      "labels": [
+        "CompositionEntity"
+      ],
+      "properties": {
+        "composition_entity_id": "entity-21876o-figure"
+      },
+      "style": {
+        "node-color": "#c45100",
+        "outside-position": "bottom",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n3",
+      "position": {
+        "x": 1331.358894902971,
+        "y": 580.0029452833219
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Entity"
+      ],
+      "properties": {
+        "concept_id": "concept-maenad"
+      },
+      "style": {
+        "node-color": "#0062b1",
+        "outside-position": "top",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n4",
+      "position": {
+        "x": 2565.0748201703104,
+        "y": 1115.211938246355
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-21876o-maenad",
+        "certainty": "0.5",
+        "reasoning_statement": "The tousled hair might indicate a maenad",
+        "timestamp": "2026-02-18",
+        "status": "Alternative"
+      },
+      "style": {
+        "node-color": "#ab149e",
+        "outside-position": "top-right",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n5",
+      "position": {
+        "x": 2881.464691613449,
+        "y": 640.109042147514
+      },
+      "caption": "",
+      "labels": [
+        "Architectonic",
+        "Methodology"
+      ],
+      "properties": {
+        "architectonic_id": "architectonic-missing-attributes"
+      },
+      "style": {
+        "outside-position": "top",
+        "node-color": "#4C8EDA",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n6",
+      "position": {
+        "x": 3034.1896908547906,
+        "y": 318.1153143929194
+      },
+      "caption": "",
+      "labels": [
+        "Architectonic",
+        "Methodology"
+      ],
+      "properties": {
+        "architectonic_id": "architectonic-source-of-uncertainty"
+      },
+      "style": {
+        "node-color": "#4C8EDA",
+        "label-font-size": 23,
+        "property-font-size": 20,
+        "outside-position": "top"
+      }
+    },
+    {
+      "id": "n7",
+      "position": {
+        "x": 1403.2447968326828,
+        "y": 1626.9908970822626
+      },
+      "caption": "",
+      "labels": [
+        "Agent",
+        "HumanAgent"
+      ],
+      "properties": {
+        "agent_id": "agent-human-researcher"
+      },
+      "style": {
+        "node-color": "#653294",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n11",
+      "position": {
+        "x": 1209.9051370036188,
+        "y": 318.1153143929194
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Entity"
+      ],
+      "properties": {
+        "concept_id": "concept-mythological-figure"
+      },
+      "style": {
+        "node-color": "#0062b1",
+        "outside-position": "top",
+        "label-font-size": 23,
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n12",
+      "position": {
+        "x": 841.6998415082628,
+        "y": 902.7855715973035
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-21876o-figure",
+        "certainty": "1.0",
+        "reasoning_statement": "Morphologically human, but could be a mythological being/deity",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {
+        "node-color": "#ab149e",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n13",
+      "position": {
+        "x": 841.6998415082628,
+        "y": 75
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Entity"
+      ],
+      "properties": {
+        "concept_id": "concept-figure"
+      },
+      "style": {
+        "node-color": "#0062b1",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n14",
+      "position": {
+        "x": 615.1380331688372,
+        "y": 1231.199293916027
+      },
+      "caption": "",
+      "labels": [
+        "CompositionFeature"
+      ],
+      "properties": {
+        "composition_feature_id": "feature-21876o-portrait"
+      },
+      "style": {
+        "node-color": "#c45100",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n15",
+      "position": {
+        "x": 615.1380331688372,
+        "y": 905.3227964995913
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-21876o-portrait",
+        "certainty": "1.0",
+        "reasoning_statement": "Clear visual truncation",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {
+        "node-color": "#ab149e",
+        "label-font-size": 23,
+        "outside-position": "bottom",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n16",
+      "position": {
+        "x": 615.1380331688372,
+        "y": 580.0029452833219
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Feature"
+      ],
+      "properties": {
+        "concept_id": "concept-portrait"
+      },
+      "style": {
+        "node-color": "#0062b1",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n18",
+      "position": {
+        "x": 2178.813775805856,
+        "y": 388.8961389591054
+      },
+      "caption": "",
+      "labels": [
+        "Architectonic",
+        "Methodology"
+      ],
+      "properties": {
+        "architectonic_id": "architectonic-supporting-observation"
+      },
+      "style": {
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n23",
+      "position": {
+        "x": 112.5,
+        "y": 1228.6620690137393
+      },
+      "caption": "",
+      "labels": [
+        "CompositionFeature"
+      ],
+      "properties": {
+        "composition_feature_id": "feature-21876o-female"
+      },
+      "style": {
+        "node-color": "#c45100",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n24",
+      "position": {
+        "x": 112.5,
+        "y": 902.7855715973035
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-21876o-female",
+        "certainty": "0.9",
+        "reasoning_statement": "No typical male attributes (like beard)",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {
+        "node-color": "#ab149e",
+        "label-font-size": 23,
+        "outside-position": "left",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n25",
+      "position": {
+        "x": 112.5,
+        "y": 577.4657203810341
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Feature"
+      ],
+      "properties": {
+        "concept_id": "concept-female"
+      },
+      "style": {
+        "node-color": "#0062b1",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n26",
+      "position": {
+        "x": 615.1380331688372,
+        "y": 318.1153143929194
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Feature"
+      ],
+      "properties": {
+        "concept_id": "concept-visual-scope"
+      },
+      "style": {
+        "node-color": "#0062b1",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n34",
+      "position": {
+        "x": 2392.6016248698547,
+        "y": 710.0204468158585
+      },
+      "caption": "",
+      "labels": [
+        "Architectonic",
+        "Methodology"
+      ],
+      "properties": {
+        "architectonic_id": "architectonic-known-iconographic-cheme"
+      },
+      "style": {
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n36",
+      "position": {
+        "x": 366.37627133241295,
+        "y": 1721.9133930580465
+      },
+      "caption": "",
+      "labels": [
+        "Image"
+      ],
+      "properties": {
+        "img_id": "img-21876-obverse",
+        "src_url": "https://data.corpus-nummorum.eu/storage/coins/21876/img/23969/o/thumbnails/lg.jpeg",
+        "name": "21876o"
+      },
+      "style": {}
+    },
+    {
+      "id": "n37",
+      "position": {
+        "x": 231.97961499054924,
+        "y": 2343.258395684713
+      },
+      "caption": "",
+      "labels": [
+        "UnitProductionPlace"
+      ],
+      "properties": {
+        "unit_production_place_id": "production-21876-cyzicus"
+      },
+      "style": {}
+    },
+    {
+      "id": "n38",
+      "position": {
+        "x": 615.1380331688372,
+        "y": 2343.258395684713
+      },
+      "caption": "",
+      "labels": [
+        "UnitDenomination"
+      ],
+      "properties": {
+        "unit_denomination_id": "denomination-21876-stater"
+      },
+      "style": {}
+    },
+    {
+      "id": "n39",
+      "position": {
+        "x": 970.5983054521248,
+        "y": 2343.258395684713
+      },
+      "caption": "",
+      "labels": [
+        "UnitMaterial"
+      ],
+      "properties": {
+        "unit_material_id": "material-21876-electrum"
+      },
+      "style": {}
+    },
+    {
+      "id": "n40",
+      "position": {
+        "x": 231.97961499054924,
+        "y": 2642.904106355564
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-cyzicus-minting",
+        "certainty": "1.0",
+        "reasoning_statement": "Typical tunny (symbol of cyzicus) on obverse",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {
+        "outside-position": "left"
+      }
+    },
+    {
+      "id": "n41",
+      "position": {
+        "x": 615.1380331688372,
+        "y": 2642.904106355564
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-21876-denomination",
+        "certainty": "1.0",
+        "reasoning_statement": "Based on material and shape",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {}
+    },
+    {
+      "id": "n42",
+      "position": {
+        "x": 970.5983054521248,
+        "y": 2642.904106355564
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-21876-material",
+        "certainty": "1.0",
+        "reasoning_statement": "Attestet by autopsy",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {}
+    },
+    {
+      "id": "n43",
+      "position": {
+        "x": 1303.9106795874657,
+        "y": 2343.258395684713
+      },
+      "caption": "",
+      "labels": [
+        "UnitDating"
+      ],
+      "properties": {
+        "dating_id": "dating-21876-classical-period",
+        "year_min": "-410",
+        "year_max": "330",
+        "reasoning_statement": "",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {}
+    },
+    {
+      "id": "n44",
+      "position": {
+        "x": 231.97961499054924,
+        "y": 2918.446999140664
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Location"
+      ],
+      "properties": {
+        "concept_id": "concept-cyzicus"
+      },
+      "style": {
+        "outside-position": "bottom"
+      }
+    },
+    {
+      "id": "n45",
+      "position": {
+        "x": 231.97961499054924,
+        "y": 3254.369234406353
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Location"
+      ],
+      "properties": {
+        "concept_id": "concept-mysia"
+      },
+      "style": {}
+    },
+    {
+      "id": "n46",
+      "position": {
+        "x": 615.1380331688372,
+        "y": 2918.446999140664
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Denomination"
+      ],
+      "properties": {
+        "concept_id": "denomination-stater"
+      },
+      "style": {}
+    },
+    {
+      "id": "n47",
+      "position": {
+        "x": 970.5983054521248,
+        "y": 2918.446999140664
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Material"
+      ],
+      "properties": {
+        "material_id": "concept-electrum"
+      },
+      "style": {}
+    },
+    {
+      "id": "n48",
+      "position": {
+        "x": 1890.2479313432088,
+        "y": 2140.7884806352813
+      },
+      "caption": "",
+      "style": {},
+      "labels": [
+        "Composition",
+        "CoinReverse"
+      ],
+      "properties": {
+        "composition_id": "composition-21876-reverse"
+      }
+    },
+    {
+      "id": "n49",
+      "position": {
+        "x": 2259.8760075961923,
+        "y": 2354.1933499599845
+      },
+      "caption": "",
+      "labels": [
+        "Image"
+      ],
+      "properties": {
+        "img_id": "img-21876-reverse",
+        "src_url": "https://data.corpus-nummorum.eu/storage/coins/21876/img/23969/r/thumbnails/lg.jpeg",
+        "name": "21876r"
+      },
+      "style": {}
+    },
+    {
+      "id": "n50",
+      "position": {
+        "x": 1403.2447968326828,
+        "y": 1133.5529711368226
+      },
+      "caption": "",
+      "style": {},
+      "labels": [
+        "CompositionEntity"
+      ],
+      "properties": {
+        "composition_entity_id": "entity-21876o-tunny"
+      }
+    },
+    {
+      "id": "n51",
+      "position": {
+        "x": 1612.3408498977103,
+        "y": 989.7477979051057
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-21876o-tunny",
+        "certainty": "1.0",
+        "reasoning_statement": "Typical cyzicus-tunny",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {
+        "node-color": "#ab149e",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n52",
+      "position": {
+        "x": 1725.159285199568,
+        "y": 388.89613895910543
+      },
+      "caption": "",
+      "style": {},
+      "labels": [
+        "Concept",
+        "Entity"
+      ],
+      "properties": {
+        "concept_id": "concept-tunny"
+      }
+    },
+    {
+      "id": "n53",
+      "position": {
+        "x": 1725.159285199568,
+        "y": 153.35210560348224
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Entity"
+      ],
+      "properties": {
+        "concept_id": "concept-fish"
+      },
+      "style": {}
+    },
+    {
+      "id": "n54",
+      "position": {
+        "x": 1725.159285199568,
+        "y": -82.19192775214097
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Entity"
+      ],
+      "properties": {
+        "concept_id": "concept-animal"
+      },
+      "style": {}
+    },
+    {
+      "id": "n55",
+      "position": {
+        "x": 2732.324002417176,
+        "y": 2199.007731365922
+      },
+      "caption": "",
+      "labels": [
+        "CompositionEntity"
+      ],
+      "properties": {
+        "composition_entity_id": "entity-21876r-incuse-square"
+      },
+      "style": {}
+    },
+    {
+      "id": "n56",
+      "position": {
+        "x": 2941.4200554822037,
+        "y": 2055.202558134205
+      },
+      "caption": "",
+      "labels": [
+        "Interpretation"
+      ],
+      "properties": {
+        "interpretation_id": "interpretation-21876r-incuse-square",
+        "certainty": "1.0",
+        "reasoning_statement": "Typical mill-sail pattern",
+        "timestamp": "2026-02-18",
+        "status": "Primary"
+      },
+      "style": {
+        "node-color": "#ab149e",
+        "label-font-size": 23,
+        "outside-position": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n57",
+      "position": {
+        "x": 3054.2384907840615,
+        "y": 1454.3508991882045
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Entity"
+      ],
+      "properties": {
+        "concept_id": "concept-incuse-square"
+      },
+      "style": {}
+    },
+    {
+      "id": "n58",
+      "position": {
+        "x": 3054.2384907840615,
+        "y": 1218.8068658325815
+      },
+      "caption": "",
+      "labels": [
+        "Concept",
+        "Entity"
+      ],
+      "properties": {
+        "concept_id": "concept-abstract-shape"
+      },
+      "style": {}
+    }
+  ],
+  "relationships": [
+    {
+      "id": "n0",
+      "fromId": "n0",
+      "toId": "n1",
+      "type": "HAS_COMPOSITION",
+      "properties": {},
+      "style": {
+        "detail-orientation": "parallel",
+        "property-font-size": 20,
+        "attachment-start": "top"
+      }
+    },
+    {
+      "id": "n1",
+      "fromId": "n1",
+      "toId": "n2",
+      "type": "HAS_COMPOSITION_ENTITY",
+      "properties": {},
+      "style": {
+        "detail-orientation": "parallel",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n2",
+      "fromId": "n2",
+      "toId": "n4",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {
+        "detail-orientation": "parallel",
+        "property-font-size": 20,
+        "attachment-start": "top",
+        "attachment-end": "normal"
+      }
+    },
+    {
+      "id": "n3",
+      "fromId": "n4",
+      "toId": "n3",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n4",
+      "fromId": "n5",
+      "toId": "n6",
+      "type": "IS_A",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n6",
+      "fromId": "n4",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n9",
+      "fromId": "n4",
+      "toId": "n5",
+      "type": "IMPAIRED_BY",
+      "properties": {},
+      "style": {
+        "property-font-size": 20,
+        "attachment-start": "right"
+      }
+    },
+    {
+      "id": "n10",
+      "fromId": "n3",
+      "toId": "n11",
+      "type": "IS_A",
+      "properties": {},
+      "style": {
+        "property-font-size": 20,
+        "attachment-start": "top"
+      }
+    },
+    {
+      "id": "n12",
+      "fromId": "n2",
+      "toId": "n12",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {
+        "attachment-start": "top",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n13",
+      "fromId": "n12",
+      "toId": "n13",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n14",
+      "fromId": "n11",
+      "toId": "n13",
+      "type": "IS_A",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n15",
+      "fromId": "n2",
+      "toId": "n14",
+      "type": "HAS_COMPOSITION_FEATURE",
+      "properties": {},
+      "style": {
+        "attachment-start": "left",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n16",
+      "fromId": "n14",
+      "toId": "n15",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n17",
+      "fromId": "n15",
+      "toId": "n16",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n23",
+      "fromId": "n23",
+      "toId": "n24",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n24",
+      "fromId": "n24",
+      "toId": "n25",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n26",
+      "fromId": "n2",
+      "toId": "n23",
+      "type": "HAS_COMPOSITION_FEATURE",
+      "properties": {},
+      "style": {
+        "attachment-start": "left",
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n27",
+      "fromId": "n16",
+      "toId": "n26",
+      "type": "IS_A",
+      "properties": {},
+      "style": {
+        "property-font-size": 20
+      }
+    },
+    {
+      "id": "n41",
+      "fromId": "n34",
+      "toId": "n18",
+      "type": "IS_A",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n46",
+      "fromId": "n1",
+      "toId": "n36",
+      "type": "HAS_IMAGE",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n47",
+      "fromId": "n0",
+      "toId": "n37",
+      "type": "HAS_PRODUCTION_PLACE",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n48",
+      "fromId": "n0",
+      "toId": "n38",
+      "type": "HAS_DENOMINATION",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n49",
+      "fromId": "n0",
+      "toId": "n39",
+      "type": "HAS_MATERIAL",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n50",
+      "fromId": "n37",
+      "toId": "n40",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n51",
+      "fromId": "n38",
+      "toId": "n41",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n52",
+      "fromId": "n39",
+      "toId": "n42",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n53",
+      "fromId": "n40",
+      "toId": "n44",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n54",
+      "fromId": "n44",
+      "toId": "n45",
+      "type": "IS_A",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n55",
+      "fromId": "n41",
+      "toId": "n46",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n56",
+      "fromId": "n42",
+      "toId": "n47",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n57",
+      "fromId": "n0",
+      "toId": "n43",
+      "type": "HAS_DATING",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n58",
+      "fromId": "n12",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n59",
+      "fromId": "n15",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n61",
+      "fromId": "n24",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n62",
+      "fromId": "n40",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n63",
+      "fromId": "n41",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n64",
+      "fromId": "n42",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n65",
+      "fromId": "n43",
+      "toId": "n7",
+      "type": "STATED_BY",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n66",
+      "type": "",
+      "style": {},
+      "properties": {},
+      "fromId": "n4",
+      "toId": "n34"
+    },
+    {
+      "id": "n67",
+      "type": "HAS_COMPOSITION",
+      "style": {},
+      "properties": {},
+      "fromId": "n0",
+      "toId": "n48"
+    },
+    {
+      "id": "n68",
+      "type": "HAS_IMAGE",
+      "style": {},
+      "properties": {},
+      "fromId": "n48",
+      "toId": "n49"
+    },
+    {
+      "id": "n70",
+      "type": "HAS_INTERPRETATION",
+      "style": {},
+      "properties": {},
+      "fromId": "n50",
+      "toId": "n51"
+    },
+    {
+      "id": "n71",
+      "type": "IDENTIFIED_AS",
+      "style": {},
+      "properties": {},
+      "fromId": "n51",
+      "toId": "n52"
+    },
+    {
+      "id": "n73",
+      "type": "HAS_COMPOSITION_ENTITY",
+      "style": {},
+      "properties": {},
+      "fromId": "n1",
+      "toId": "n50"
+    },
+    {
+      "id": "n74",
+      "type": "IS_A",
+      "style": {},
+      "properties": {},
+      "fromId": "n52",
+      "toId": "n53"
+    },
+    {
+      "id": "n75",
+      "type": "IS_A",
+      "style": {},
+      "properties": {},
+      "fromId": "n53",
+      "toId": "n54"
+    },
+    {
+      "id": "n76",
+      "fromId": "n55",
+      "toId": "n56",
+      "type": "HAS_INTERPRETATION",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n77",
+      "fromId": "n56",
+      "toId": "n57",
+      "type": "IDENTIFIED_AS",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n78",
+      "fromId": "n57",
+      "toId": "n58",
+      "type": "IS_A",
+      "properties": {},
+      "style": {}
+    },
+    {
+      "id": "n79",
+      "type": "HAS_COMPOSITION_ENTITY",
+      "style": {},
+      "properties": {},
+      "fromId": "n48",
+      "toId": "n55"
+    }
+  ]
+}
