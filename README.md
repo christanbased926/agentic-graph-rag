@@ -2,9 +2,10 @@
   <img src="assets/in-idea-agent-logo.svg" alt="Logo showing a minimalist robot, head with two eyes, body showing the Letters I D E A as an amalgam" width="150">
 </p>
 
-
 # GraphRAG-Driven Agentic Reasoning: A Research Prototype using ADK, MCP, and Neo4j
 **Case Study: Ancient Numismatics & the IN.IDEA Model**
+
+**DOI: [10.5281/zenodo.19183341](https://doi.org/10.5281/zenodo.19183341)**
 
 ## Features & Capabilities
 
@@ -188,6 +189,23 @@ It is coordinated by the [Union of German Academies of Sciences and Humanities](
 
 **Contact:** For any app related topic we prefer direct communication on Github, for any contact to our initiative, see [Contact](https://www.imagines-nummorum.eu/en/contact)
 
+
+## Citation
+
+```bibtex
+@software{koester_jan_GraphRAG-Driven_Agentic_Reasoning_2026,
+  author       = {Köster, Jan},
+  license      = {Apache-2.0},
+  title        = {{GraphRAG-Driven Agentic Reasoning: A Research Prototype using ADK, MCP, and Neo4j}},
+  month        = mar,
+  year         = {2026},
+  publisher    = {Zenodo},
+  version      = {v0.1.0},
+  doi          = {10.5281/zenodo.19183341},
+  url          = {https://doi.org/10.5281/zenodo.19183341}
+}
+
+```
 
 ## AI Transparency & Methodology
 In alignment with the epistemological focus of this project, transparency regarding the creation process is paramount. This prototype was developed with the assistance of **Google Gemini 3.1 Pro** for Coding and **3.0 Thinking** for brainstorming.
